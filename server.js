@@ -1,6 +1,6 @@
 const express = require('express');
-const keys = require('./config/keys.js');
-const prod = require('/config/prod.js');
+const keys = require('./keys.js');
+const prod = require('./prod.js');
 const app = express();
 
 //Setting up DB
