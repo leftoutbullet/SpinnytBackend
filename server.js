@@ -14,8 +14,8 @@ require('./routes/ScoreSaving.js')(app);
 require('./routes/GetScore.js')(app);
 
 
-app.listen(keys.port, () => {
-    console.log("listening on " + keys.port);
+app.listen(keys.PORT, () => {
+    console.log("listening on " + keys.PORT);
 })
 
 
