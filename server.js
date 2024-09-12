@@ -1,7 +1,8 @@
+import dotenv from 'dotenv';
+dotenv.config();
 const express = require('express');
 const keys = require('./keys.js');
 const app = express();
-require('dotenv').config()
 
 //Setting up DB
 const mongoose = require('mongoose');
@@ -14,8 +15,8 @@ require('./routes/ScoreSaving.js')(app);
 require('./routes/GetScore.js')(app);
 
 
-app.listen(keys.PORT, () => {
-    console.log("listening on " + keys.PORT);
+app.listen(dev.PORT, () => {
+    console.log("listening on " + dev.PORT);
 })
 
 
