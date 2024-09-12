@@ -1,0 +1,1 @@
+http://localhost:13567/score?rTimer=392&rLevel=vinyl&rDevice=Khalil
