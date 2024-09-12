@@ -1,11 +1,11 @@
 const express = require('express');
-const keys = require('./config/keys.js');
+const keys = require('./keys.js');
 const app = express();
-require('dotenv').config({ path: 'ENV_FILENAME' });
+require('dotenv').config()
 
 //Setting up DB
 const mongoose = require('mongoose');
-mongoose.connect(keys.mongoURI, { useNewUrlParser: true });
+mongoose.connect(keys.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
 //setting up DB models
 require('./model/Score.js');
 
