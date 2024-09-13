@@ -6,7 +6,7 @@ module.exports = app => {
     app.get('/score/top', async (req, res) => {
         try {
             const highestTimers = await Score.find()
-                .sort({ timer: 1 }) // Sort by timer field in descending order
+                .sort({ timer: -1 }) // Sort by timer field in descending order
                 .limit(3); // Limit the result to 3 documents
 
             res.send(highestTimers);
